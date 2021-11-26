@@ -42,19 +42,25 @@ export const styles=StyleSheet.create({
 
     },
     btncadastrar:{
-        position:"absolute",
-        bottom:30,
+       // position:"absolute",
+       // bottom:30,
         backgroundColor:'#5f9ea0',
-        padding:20,
+        padding:10,
         borderRadius:50,
         
 
     },
     txtbtncadastrar:{
-        fontSize:30,
+        fontSize:20,
         fontWeight:'bold',
         color:'white',
-        textTransform:'uppercase'
+        textTransform:'uppercase',
+        textAlign:"center"
+    },
+    titulo:{
+        fontSize:20,
+        fontWeight:'bold',
+        textAlign:"center",
     }
         
     
