@@ -61,6 +61,47 @@ export const styles=StyleSheet.create({
         fontSize:20,
         fontWeight:'bold',
         textAlign:"center",
+    },
+    imgcliente:{
+        width:500,
+        
+        resizeMode:'cover',
+        height:300
+
+    },
+    cliente:{
+        width:400,
+        height:200,
+        padding:20,
+        backgroundColor:'white',
+        shadowColor:'silver',
+        shadowOffset:{width:10, height:10},
+        shadowOpacity:1,
+        shadowRadius:10,
+        elevation:10 
+    },
+    nome:{
+        fontSize:12,
+        fontWeight:'bold'
+        
+    },
+    cpf:{
+      fontWeight:'bold',
+        fontSize:12
+    },
+    email:{
+       fontSize:15,
+       color:"#f00",
+       fontWeight:'bold'
+
+    },
+    usuario:{
+      fontSize:15,
+      color:"teal",
+      fontWeight:"bold"
+    },
+    scroll:{
+
     }
         
     
