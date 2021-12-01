@@ -66,7 +66,7 @@ function TelaHome({navigation}){
                         <Text style={styles.email}> EMAIL:{item.email}</Text>
                         <Text style={styles.usuario}>USUARIO: {item.usuario}</Text>
                         <TouchableOpacity onPress={()=>{
-                            navigation.navigate("Atualizar,",{cliente:item})
+                            navigation.navigate("Atualizar,",{cliente:item,token:rs})
                         }}>
                           
                         <AntDesign name="edit" size={24} color="black" /> 

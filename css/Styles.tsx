@@ -102,7 +102,21 @@ export const styles=StyleSheet.create({
     },
     scroll:{
 
-    }
+    },
+    apagar:{
+        textAlign:"center",
+        padding:20,
+        width:'80%',
+        borderRadius:10,
+        borderWidth:1,
+        borderColor:'red'
+    },
+    txtbtnapagar:{
+        fontSize:15,
+        textAlign:"center",
+        fontWeight:'bold',
+
+    },
         
     
 })
