@@ -96,28 +96,28 @@ function excluirUsuario() {
         },
         {
             text: "Apagar",
-            onPress: () => r = true,
+            onPress: () =>{
+                fetch(`${servidor}/apagar/${idcliente}`, {
+                    method: "DELETE",
+                    headers: {
+                        accept: "application/json",
+                        "content-type": "application/json",
+                        "token": rs
+                    },
+                }).then((response) => response.status)
+                .then((dados) => {
+                    if (dados.toString()=="204") {
+                         Alert.alert("apagado", "Conta apagada");
+                    }
+                    else {
+                        Alert.alert("Atencao", "não foi possivel apagar os dados");
+                    }
+                })
+                    .catch((erro) => console.error(`Erro ao ler a api ->${erro}`));
+            }
         }
     ]);
-    if (r) {
-        fetch(`${servidor}/apagar/${idcliente}`, {
-            method: "DELETE",
-            headers: {
-                accept: "application/json",
-                "content-type": "application/json",
-                "token": rs
-            },
-        }).then((response) => response.json())
-        .then((dados) => {
-            if (!dados) {
-                return Alert.alert("apagado", "Conta apagada");
-            }
-            else {
-                Alert.alert("Atencao", dados.output);
-            }
-        })
-            .catch((erro) => console.error(`Erro ao ler a api ->${erro}`));
-        )
+   
     }
 
 
